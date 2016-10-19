@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <title>Exemplos iniciais de JS</title>
     <script>
+        function Validar(pTexto){
+            if (pTexto == ''){
+                alert('Sem nome não da né ANIMAL')
+            } else {
+                OlaMundo(pTexto)
+            }
+        }
+
         function OlaMundo(pNome) {
-            alert(pNome);
+            alert(pNome + ' esse é o nome');
         }
     </script>
 </head>
 <body>
-    <button id="btnHello" onclick="OlaMundo('douglas')">Ola mundo</button>
+    Nome do cidadao:<br>
+    <textarea id="txtHello"></textarea>
+    <br>
+    <button id="btnHello" onclick="Validar(txtHello.value)">mostra desgraça</button>
 </body>
 </html>
