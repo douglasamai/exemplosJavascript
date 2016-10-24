@@ -3,25 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Exemplos iniciais de JS</title>
-    <script>
-        function Validar(pTexto){
-            if (pTexto == ''){
-                alert('Sem nome não da né ANIMAL')
-            } else {
-                OlaMundo(pTexto)
-            }
-        }
-
-        function OlaMundo(pNome) {
-            alert(pNome + ' esse é o nome');
-        }
-    </script>
+    <script src="main.js"></script>
 </head>
 <body>
-    Nome do cidadao:<br>
-    <textarea id="txtHello"></textarea>
+    <h1>1.0</h1>
+        <label>Hello Word</label>
+
+    <br>
+    <h1>1.1</h1>
+    <button id="btnHelloSimples" onclick="MostrarHello()">mostra</button>
+
+    <br>
+    <h1>1.2</h1>
+        Nome do cidadao:<br>
+        <input id="txtHello">
+        <br>
+        <button id="btnHello" onclick="Validar(txtHello.value)">mostra ola com nome</button>
+
+    <br>
+    <h1>2.0</h1>
+    10 + 10
     <br>
     <br>
-    <button id="btnHello" onclick="Validar(txtHello.value)">mostra desgraça</button>
+    <button id="btn20" onclick="ResultadoEstatico()">Resultado estatico</button>
+
+    <br>
+    <h1>2.1</h1>
+    15 - 8
+    <br>
+    <br>
+    <button id="btn21" onclick="Resultado21()">Resultado 2.1</button>
+
+    <br>
+    <h1>2.2</h1>
+    15 * 8
+    <br>
+    <br>
+    <button id="btn22" onclick="Resultado22()">Resultado 2.2</button>
+
+    <br>
+    <h1>2.3</h1>
+    10 / 2
+    <br>
+    <br>
+    <button id="btn23" onclick="Resultado23()">Resultado 2.3</button>
+
+    <br>
+    <h1>2.4</h1>
+    valor1
+    <input id="valor241">
+    valor2
+    <input id="valor242">
+    <br>
+    <br>
+    <button id="btn24" onclick="Resultado24(valor241.value, valor242.value)">Resultado 2.4</button>
+
+    <br>
+    <h1>2.5</h1>
+    valor1
+    <input id="valor251">
+    valor2
+    <input id="valor252">
+    <br>
+    <br>
+    <button id="btn25" onclick="Resultado25(valor251.value, valor252.value)">Resultado 2.5</button>
+
+    <br>
+    <h1>2.6</h1>
+    valor1
+    <input id="valor261">
+    valor2
+    <input id="valor262">
+    <br>
+    <br>
+    <button id="btn26" onclick="Resultado26(valor261.value, valor262.value)">Resultado 2.6</button>
+    resultado
+    <p id="resultado26"></p>
+
+    <br>
+    <h1>2.7</h1>
+    valor1
+    <input id="valor271">
+    valor2
+    <input id="valor272">
+    <br>
+    <br>
+    <button id="btn27" onclick="Resultado27(valor271.value, valor272.value)">Resultado 2.7</button>
+    resultado
+    <p id="resultado27"></p>
+
+    <h1>2.8</h1>
+    valor1
+    <input id="valor281">
+    valor2
+    <input id="valor282">
+    <br>
+    <br>
+    selecione a operacao:
+    <br>
+    <button id="btn281" onclick="SetarOperacao28('+')">Somar</button>
+    <button id="btn282" onclick="SetarOperacao28('-')">Subtrair</button>
+    <button id="btn283" onclick="SetarOperacao28('*')">Multiplicar</button>
+    <button id="btn284" onclick="SetarOperacao28('/')">Dividir</button>
+    <br>
+    <button id="btn285" onclick="Resultado28(valor281.value, valor282.value)">Resultado 2.8</button>
+    <br>
+    resultado:
+    <p id="resultado28"></p>
+    <br>
+    <br>
 </body>
 </html>
